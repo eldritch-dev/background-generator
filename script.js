@@ -29,6 +29,7 @@ function randomize() {
 	color2.setAttribute("value", "#" + r2);
 
 	body.style.background = "linear-gradient(to right," + color1.getAttribute("value") + "," + color2.getAttribute("value") + ")";
+	css.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", setGradient);
